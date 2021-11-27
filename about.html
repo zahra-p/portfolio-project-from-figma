@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zahra Adelinia Portfolio</title>
-
+    <meta
+      name="description"
+      content="About Zahra Adelinia. Zahra is a software engineer based in Iran."
+    />
+    <title>About Zahra - Zahra Adelinia</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -30,6 +33,30 @@
     ></script>
   </head>
   <body>
+    <div class="container">
+      <nav class="d-flex justify-content-between">
+        <a href="/" title="Homepage">
+          <img
+            src="/images/logo.png"
+            class="logo d-none d-md-block"
+            alt="Zahra Logo"
+          />
+          <img
+            src="/images/small-logo.jpg"
+            class="logo d-block d-md-none"
+            alt="Zahra Logo"
+          />
+        </a>
+        <ul>
+          <li><a href="/" title="Homepage">Home</a></li>
+          <li class="active">
+            <a href="/about.html" title="About Zahra">About</a>
+          </li>
+          <li><a href="/work.html" title="Zahra's work">Work</a></li>
+          <li><a href="/contact.html" title="Contact Zahra">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
     <div class="content-container container">
       <div class="row">
         <div class="col-lg-6">
@@ -42,13 +69,65 @@
               everything is well explained, homework and deadlines are good for
               keep focus
             </p>
-            <a href="" class="btn btn-branding">See my projects</a>
+            <a href="/work.html" class="btn btn-branding">See my projects</a>
           </div>
         </div>
         <div class="col-lg-6">
-          <img src="images/me.png" alt="" class="img-fluid" />
+          <img src="images/me.png" alt="My photo" class="img-fluid" />
         </div>
       </div>
     </div>
+    <footer class="container">
+      <div
+        class="contact-box d-flex justify-content-between mb-5 d-none d-md-flex"
+      >
+        <div>
+          <h3>Work Inquiry</h3>
+          <p cl1ass="text-muted">Let's work together</p>
+        </div>
+        <div>
+          <a
+            href="/contact.html"
+            class="btn btn-branding mt-3"
+            title="Contact Zahra"
+          >
+            Contact me</a
+          >
+        </div>
+      </div>
+      <div class="d-flex justify-content-center mb-5">
+        <a href="mailto:zahra.adelinia@gmail.com" class="email-link"
+          >zahra.adelinia@gmail.com</a
+        >
+      </div>
+      <div class="social-links d-flex justify-content-center mb-5">
+        <a
+          href="https://github.com/zahra-p"
+          target="_blank"
+          title="GitHub Profile"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a
+          href="https://instagram.com/zahra-p"
+          target="_blank"
+          title="instagram Profile"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a
+          href="https://twitter.com/zahra-p"
+          target="_blank"
+          title="Twitter Profile"
+          ><i class="fab fa-twitter"></i
+        ></a>
+      </div>
+      <p class="text-center mt-5">
+        ✌ This project was coded by Zahra Adelinia, and it is
+        <a
+          href="https://github.com/zahra-p/portfolio-project-from-figma"
+          target="_blank"
+          >open-sourced</a
+        >
+      </p>
+    </footer>
   </body>
 </html>
